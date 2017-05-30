@@ -20,12 +20,12 @@ yarn add fastget
 ```js
 import get from 'fastget';
 
-const object = {a: [{b: {c: 3}}]}
+const obj = {a: [{b: {c: 3}}]}
 
-get(() => a[0].b.c)
+get(() => obj.a[0].b.c)
 // => 3
 
-get(() => a.b.c, 'default')
+get(() => obj.a.b.c, 'default')
 // => 'default'
 ```
 
