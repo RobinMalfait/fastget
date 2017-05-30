@@ -1,6 +1,6 @@
 {
   "name": "fastget",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An alternative to lodash _.get()",
   "main": "src/index.js",
   "scripts": {
