@@ -1,0 +1,23 @@
+{
+  "name": "fast-get",
+  "version": "1.0.0",
+  "description": "An alternative to lodash _.get()",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RobinMalfait/fast-get.git"
+  },
+  "keywords": [],
+  "author": "Robin Malfait <malfait.robin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RobinMalfait/fast-get/issues"
+  },
+  "homepage": "https://github.com/RobinMalfait/fast-get#readme",
+  "devDependencies": {
+    "jest": "^20.0.4"
+  }
+}
