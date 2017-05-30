@@ -53,7 +53,23 @@ it("should get the value from an array", () => {
 it("should get the defaultValue if the index does not exist", () => {
   const arr = [1, 2, 3, 5, 8, 13, 21];
 
-  const expected = get(() => arr[40], 'defaultValue');
+  const expected = get(() => arr[40], "defaultValue");
 
-  expect(expected).toEqual('defaultValue');
+  expect(expected).toEqual("defaultValue");
+});
+
+it("should get value from nested object and arrays", () => {
+  const obj = {
+    a: [
+      {
+        b: {
+          c: 3
+        }
+      }
+    ]
+  };
+
+  const expected = get(() => obj.a[0].b.c);
+
+  expect(expected).toEqual(3);
 });
